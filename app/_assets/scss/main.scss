@@ -1,8 +1,4 @@
-// Modules and Variables
-@import "partials/base";
+@import "../../../node_modules/tachyons-sass/tachyons.scss";
 
-// Third-party
-@import "vendor/bootstrap-custom";
-
-// Partials
-@import "partials/global";
+@import "variables";
+@import "styles";

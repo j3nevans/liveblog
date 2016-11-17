@@ -1,8 +1,8 @@
 ---
-layout: article
+module-type: fact-check
 title: "Optimized Jekyll site with Grunt"
 date: 2015-01-31T21:12:17+02:00
-categories: [jekyll, grunt, web performance]
+author: David Farenthold
 post: true
 ---
 

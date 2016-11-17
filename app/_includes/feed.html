@@ -1,0 +1,42 @@
+<div>
+  {% for post in site.posts reversed %}
+
+    {% if post.module-type == "plain-text" %}
+    <article class="bg-red">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div>
+        {{ post }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+    </article>
+
+    {% elsif post.module-type == "fact-check" %}
+    <article class="bg-blue">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div>
+        {{ post }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+    </article>
+
+    {% elsif post.module-type == "multimedia" %}
+    <article class="bg-green">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div>
+        {{ post }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+    </article>
+
+    {% elsif post.module-type == "external-article" %}
+    <article  class="bg-yellow">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div>
+        {{ post }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+    </article>
+
+      {% endif %}
+  {% endfor %}
+</div>

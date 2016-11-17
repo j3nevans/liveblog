@@ -4,6 +4,7 @@
 {% include head.html %}
 
 <body>
+  {% include navigation.html %}
     <div class="container">
         <header class="header">
             <h1 class="title"><a href="/">{{ site.sitename }}</a></h1>
@@ -11,13 +12,9 @@
 
         {{ content }}
 
-        <div class="clearfix"></div>
-        <footer class="footer">
-            <div class="contact muted">
-                Template by <a href="http://o.zasadnyy.com/">Oleh Zasadnyy</a> &#8226; <a href="">Project repository</a>
-            </div>
-        </footer>
+        {% include footer.html %}
     </div>
 </body>
+
 
 </html>
