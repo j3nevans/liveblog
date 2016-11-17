@@ -1,14 +1,20 @@
 <div>
-  {% for post in site.posts reversed %}
+  {% for post in site.posts %}
 
     {% if post.module-type == "plain-text" %}
-    <article class="bg-red">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div>
-        {{ post }}
+
+    <article class="center mw5 mw6-ns hidden bg-near-white ba b--black-10 mv4">
+      <div class="pv2 cf">
+        <h1 class="f5 fw4 fl br--top black-60 mv0 pv2 ph3">{{ post.author }}, <span class="fw3 silver">{{ post.author-title }}</span></h1>
+                <h2 class="f5 fw4 fr br--top black-60 mv0 pv2 ph3">{{ post.date | date: "%I:%M %p" }}</h2>
       </div>
-      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+      <div class="ph3 bt b--black-10">
+        <div class="f6 f5-ns serif lh-copy measure">
+        {{ post }}
+        </div>
+      </div>
     </article>
+
 
     {% elsif post.module-type == "fact-check" %}
     <article class="bg-blue">
