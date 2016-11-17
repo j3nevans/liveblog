@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     // Show elapsed time after tasks run
     require('time-grunt')(grunt);
     // Load all Grunt tasks
-    require('jit-grunt')(grunt);
+    require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
         app: {
@@ -277,7 +277,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: 'git@github.com:user/repo.git',
+                    remote: 'git@github.com:j3nevans/liveblog.git',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
@@ -315,11 +315,10 @@ module.exports = function(grunt) {
         'imagemin',
         'svgmin',
         'sass:dist',
-        'uncss',
+        // 'uncss',
         'autoprefixer',
         'cssmin',
         'uglify:dist',
-        'critical',
         'htmlmin'
     ]);
 

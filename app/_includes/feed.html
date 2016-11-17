@@ -3,12 +3,12 @@
 
     {% if post.module-type == "plain-text" %}
 
-    <article class="center mw5 mw6-ns hidden bg-near-white ba b--black-10 mv4">
-      <div class="pv2 cf">
+    <article class="center mw5 mw6-ns hidden ba b--black-10 mv4">
+      <div class="pv2 cf bg-white">
         <h1 class="f5 fw4 fl br--top black-60 mv0 pv2 ph3">{{ post.author }}, <span class="fw3 silver">{{ post.author-title }}</span></h1>
-                <h2 class="f5 fw4 fr br--top black-60 mv0 pv2 ph3">{{ post.date | date: "%I:%M %p" }}</h2>
+        <h2 class="f5 fw4 fr br--top black-60 mv0 pv2 ph3">{{ post.date | date: "%I:%M %p" }}</h2>
       </div>
-      <div class="ph3 bt b--black-10">
+      <div class="ph3 bg-near-white bt b--black-10">
         <div class="f6 f5-ns serif lh-copy measure">
         {{ post }}
         </div>
