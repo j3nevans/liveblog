@@ -3,7 +3,11 @@
 
     {% if post.module-type == "plain-text" %}
 
-    <article class="center mw5 mw6-ns hidden ba b--black-10 mv4">
+    <article class="center mw5 mw6-ns mv4 flex">
+        <img
+            src="http://tachyons.io/img/logo.jpg"
+            class="br-100 h2-5 w2-5 mt1 mr3" alt="avatar">
+    <div class="hidden ba b--black-10">
       <div class="pv2 cf bg-white">
         <h1 class="f5 fw4 fl br--top black-60 mv0 pv2 ph3">{{ post.author }}, <span class="fw3 silver">{{ post.author-title }}</span></h1>
         <h2 class="f5 fw4 fr br--top black-60 mv0 pv2 ph3">{{ post.date | date: "%I:%M %p" }}</h2>
@@ -13,6 +17,7 @@
         {{ post }}
         </div>
       </div>
+    </div>
     </article>
 
 
