@@ -1,53 +1,51 @@
 <div>
   {% for post in site.posts %}
 
-    {% if post.module-type == "plain-text" %}
 
-    <article class="center mw5 mw6-ns mv4 flex">
+
+    <article class="center mw5 mw6-ns mv4 relative">
         <img
             src="http://tachyons.io/img/logo.jpg"
-            class="br-100 h2-5 w2-5 mt1 mr3" alt="avatar">
+            class="br-100 h2-5 w2-5 left--4 absolute" alt="avatar">
     <div class="hidden ba b--black-10">
       <div class="pv2 cf bg-white">
         <h1 class="f5 fw4 fl br--top black-60 mv0 pv2 ph3">{{ post.author }}, <span class="fw3 silver">{{ post.author-title }}</span></h1>
         <h2 class="f5 fw4 fr br--top black-60 mv0 pv2 ph3">{{ post.date | date: "%I:%M %p" }}</h2>
       </div>
-      <div class="ph3 bg-near-white bt b--black-10">
-        <div class="f6 f5-ns serif lh-copy measure">
+
+      <div class="bg-near-white bt b--black-10">
+
+        {% if post.module-type == "plain-text" %}
+        <div class="f6 f5-ns serif lh-copy ph3 measure bg-green">
         {{ post }}
         </div>
+
+        {% elsif post.module-type == "fact-check" %}
+        <div class="flex">
+          <div class="bg-near-white w-60 pl3">
+            <h2 class="fw5">Fact Check</h2>
+            <img src="img/{{post.fact-check}}.svg"/>
+          </div>
+          <div class="f6 f5-ns serif lh-copy measure bg-white w-40">
+            {{ post }}
+          </div>
+        </div>
+
+        {% elsif post.module-type == "multimedia" %}
+        <div class="f6 f5-ns serif lh-copy ph3 measure bg-red">
+        {{ post }}
+        </div>
+
+        {% elsif post.module-type == "external-article" %}
+        <div class="f6 f5-ns serif lh-copy ph3 measure bg-blue">
+        {{ post }}
+        </div>
+      {% endif %}
       </div>
     </div>
     </article>
 
 
-    {% elsif post.module-type == "fact-check" %}
-    <article class="bg-blue">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div>
-        {{ post }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-    </article>
+      {% endfor %}
 
-    {% elsif post.module-type == "multimedia" %}
-    <article class="bg-green">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div>
-        {{ post }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-    </article>
-
-    {% elsif post.module-type == "external-article" %}
-    <article  class="bg-yellow">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div>
-        {{ post }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-    </article>
-
-      {% endif %}
-  {% endfor %}
 </div>

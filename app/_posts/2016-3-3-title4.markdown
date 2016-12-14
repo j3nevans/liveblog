@@ -1,9 +1,10 @@
 ---
-module-type: plain-text
+module-type: fact-check
 title: "Optimized Jekyll site with Grunt"
 date: 2015-01-31T21:12:17+02:00
 author: Sophie Ho
 author-title: Digital Editor
+fact-check: mostly-false
 post: true
 ---
 
