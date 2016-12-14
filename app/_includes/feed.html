@@ -3,7 +3,7 @@
 
 
 
-    <article class="center mw5 mw6-ns mv4 relative">
+    <article class="center mw6-5 mv4 relative">
         <img
             src="http://tachyons.io/img/logo.jpg"
             class="br-100 h2-5 w2-5 left--4 absolute" alt="avatar">
@@ -24,15 +24,22 @@
         <div class="flex">
           <div class="bg-near-white w-60 pl3">
             <h2 class="fw5">Fact Check</h2>
-            <img src="img/{{post.fact-check}}.svg"/>
+            <div class="flex">
+              <img class="pr3" src="img/{{post.fact-check}}.svg"/>
+              <p class="ph2">{{post.quote}}</p>
+            </div>
           </div>
-          <div class="f6 f5-ns serif lh-copy measure bg-white w-40">
-            {{ post }}
+          <div class="f6 f5-ns serif lh-copy measure bg-white w-40 relative">
+            <div class="overflow-scroll absolute top-0 bottom-0 left-0 right-0 ph3 pv2">
+              <b> Our Analysis </b>
+              {{ post }}
+            </div>
           </div>
         </div>
 
         {% elsif post.module-type == "multimedia" %}
         <div class="f6 f5-ns serif lh-copy ph3 measure bg-red">
+        <img class="pr3" src="img/trump-looming.jpg"/>
         {{ post }}
         </div>
 
