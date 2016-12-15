@@ -137,7 +137,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 options: {
-                    compress: true,
+                    compress: false,
                     preserveComments: false,
                     report: 'min'
                 },
@@ -315,10 +315,10 @@ module.exports = function(grunt) {
         //'imagemin',
         'svgmin',
         'sass:dist',
-        // 'uncss',
+        //'uncss',
         'autoprefixer',
-        'cssmin'
-        //'uglify:dist',
+        'cssmin',
+        'uglify:dist'
         //'htmlmin'
     ]);
 
