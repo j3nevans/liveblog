@@ -1,4 +1,4 @@
-<div>
+<div class="mb7">
   {% for post in site.posts %}
 
 
@@ -34,8 +34,10 @@
           </div>
           <div class="f5 serif lh-copy measure-wide bg-white w-40 relative">
             <div class="overflow-scroll absolute top-0 bottom-0 left-0 right-0 ph3 pv2">
-              <p class="sans-serif fw6 f5 dark-gray"> Our Analysis </p>
-              {{ post }}
+              <div class="markdown">
+                <p class="sans-serif fw6 f5 dark-gray"> Our Analysis </p>
+                {{ post }}
+              </div>
             </div>
           </div>
         </div>

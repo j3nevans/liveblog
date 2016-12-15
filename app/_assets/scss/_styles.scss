@@ -56,5 +56,9 @@
   font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   color: $dark-gray;
  }
+}
 
+.table-fade {
+  background-color: #FAA100;
+  transition: 0.8s;
 }
