@@ -1,0 +1,12 @@
+---
+module-type: fact-check
+date: 2015-01-31T21:12:17+02:00
+author: Fareed Zakaria
+author-title: Op-Ed Writer
+profile-pic: fareed-zakaria.jpg
+fact-check: unclear
+quote: “There is no evidence that any classified information ended up in the wrong hands.” — Hillary Clinton
+post: true
+---
+
+There’s no evidence that anyone successfully hacked Clinton’s email servers, but they certainly were not impervious to attack. It’s possible that a sophisticated hacker gained access but left no trace. [Read our fact-sheet on the Clinton email controversy.](http://www.politifact.com/truth-o-meter/article/2016/jul/19/politifact-sheet-hillary-clintons-email-controvers/)
