@@ -16,22 +16,25 @@
       <div class="bg-near-white bt b--black-10">
 
         {% if post.module-type == "plain-text" %}
+
         <div class="f5 serif lh-copy pl3 pr4 bg-near-white">
-        {{ post }}
+          <div class="markdown">
+            {{ post }}
+          </div>
         </div>
 
         {% elsif post.module-type == "fact-check" %}
         <div class="flex">
           <div class="bg-near-white w-60 pl3">
-            <h2 class="fw5">Fact Check</h2>
+            <h2 class="fw5 dark-gray">Fact Check</h2>
             <div class="flex pb4">
               <img class="pr3" src="img/{{post.fact-check}}.svg"/>
-              <p class="ph2 f6 lh-copy">{{post.quote}}</p>
+              <p class="ph2 fw4 f6 lh-copy">{{post.quote}}</p>
             </div>
           </div>
           <div class="f5 serif lh-copy measure-wide bg-white w-40 relative">
             <div class="overflow-scroll absolute top-0 bottom-0 left-0 right-0 ph3 pv2">
-              <p class="pt1 fw4"> Our Analysis </p>
+              <p class="sans-serif fw6 f5 dark-gray"> Our Analysis </p>
               {{ post }}
             </div>
           </div>

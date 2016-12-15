@@ -41,3 +41,20 @@
 .f2-5 {
   font-size: 1.8rem;
 }
+
+.markdown {
+  a {
+    color: $gray;
+    transition: 0.5s;
+
+    &:hover {
+      color: #FAA100;
+    }
+  }
+ h2 {
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  color: $dark-gray;
+ }
+
+}
