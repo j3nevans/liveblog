@@ -5,8 +5,8 @@
 
     <article class="center mw6-5 mv4 relative">
         <img
-            src="http://tachyons.io/img/logo.jpg"
-            class="br-100 h2-5 w2-5 left--4 absolute" alt="avatar">
+            src="img/{{post.profile-pic}}"
+            class="br-100 h2-5 w2-5 left--4 absolute ba b--black-10" alt="avatar">
     <div class="hidden ba b--black-10">
       <div class="pv2 cf bg-white">
         <h1 class="f5 fw4 fl br--top black-60 mv0 pv2 ph3">{{ post.author }}, <span class="fw3 silver">{{ post.author-title }}</span></h1>
@@ -16,7 +16,7 @@
       <div class="bg-near-white bt b--black-10">
 
         {% if post.module-type == "plain-text" %}
-        <div class="f6 f5-ns serif lh-copy ph3 measure bg-green">
+        <div class="f5 serif lh-copy pl3 pr4 bg-near-white">
         {{ post }}
         </div>
 
@@ -24,27 +24,34 @@
         <div class="flex">
           <div class="bg-near-white w-60 pl3">
             <h2 class="fw5">Fact Check</h2>
-            <div class="flex">
+            <div class="flex pb4">
               <img class="pr3" src="img/{{post.fact-check}}.svg"/>
-              <p class="ph2">{{post.quote}}</p>
+              <p class="ph2 f6 lh-copy">{{post.quote}}</p>
             </div>
           </div>
-          <div class="f6 f5-ns serif lh-copy measure bg-white w-40 relative">
+          <div class="f5 serif lh-copy measure-wide bg-white w-40 relative">
             <div class="overflow-scroll absolute top-0 bottom-0 left-0 right-0 ph3 pv2">
-              <b> Our Analysis </b>
+              <p class="pt1 fw4"> Our Analysis </p>
               {{ post }}
             </div>
           </div>
         </div>
 
         {% elsif post.module-type == "multimedia" %}
-        <div class="f6 f5-ns serif lh-copy ph3 measure bg-red">
-        <img class="pr3" src="img/trump-looming.jpg"/>
-        {{ post }}
+        <div class="f5 serif lh-copy">
+          <img src="img/trump-looming.jpg"/>
+          <div class="pl3 pr4">
+            {{ post }}
+          </div>
         </div>
 
+
+
+
+
+
         {% elsif post.module-type == "external-article" %}
-        <div class="f6 f5-ns serif lh-copy ph3 measure bg-blue">
+        <div class="f6 serif lh-copy ph3 measure bg-blue">
         {{ post }}
         </div>
       {% endif %}

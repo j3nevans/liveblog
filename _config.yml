@@ -7,8 +7,6 @@ future: true
 show_drafts: true
 
 permalink: '/blog/:title'
-paginate: 5
-paginate_path: '/page:num'
 
 # Markdown library
 markdown: kramdown
@@ -19,3 +17,7 @@ url: ""
 
 # Varibles
 sitename: "Jekyll & Grunt"
+
+exclude:
+  - node_modules
+  - dist
