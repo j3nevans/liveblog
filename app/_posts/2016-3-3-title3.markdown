@@ -3,8 +3,9 @@ module-type: multimedia
 date: 2015-01-31T21:12:17+02:00
 author: Sophie Ho
 author-title: Digital Editor
+profile-pic: sophie-ho.jpg
 post: true
 ---
 
 
-There’s been an ongoing debate about the sources of Trump support, and it will only heat up after tonight’s stunning result. But I wanted to offer a few quick preliminary thoughts. First, it’s critical to differentiate why candidates win primaries and why they win general elections. And second, in re-reading explanations from Trump’s primary supporters about why they backed him, one thing that stands out to me is their anger at the political system, a point Lynn Vavreck made as well.
+Anyone else notice Trump ominously looming in the background?

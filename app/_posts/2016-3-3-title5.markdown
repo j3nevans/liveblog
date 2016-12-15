@@ -3,6 +3,7 @@ module-type: plain-text
 date: 2015-01-31T21:12:17+02:00
 author: Fareed Zakaria
 author-title: Op-Ed Writer
+profile-pic: fareed-zakaria.jpg
 post: true
 ---
 One thing I’ve been thinking about here is where the Democratic Party goes next. Three of the last four Congressional elections (2010, 2014 and 2016) were bad for the Democrats, leading to a thin bench. President Obama served out his two terms. The Clinton dynasty is over. But the most obvious alternatives to Clinton — Bernie Sanders, Joe Biden — are also pretty old. It seems that all of the energy in the party is on the left, and it wouldn’t be surprising if the 2020 nominee were someone from the Sanders wing of the party.

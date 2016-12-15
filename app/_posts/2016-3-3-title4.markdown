@@ -3,6 +3,7 @@ module-type: fact-check
 date: 2015-01-31T21:12:17+02:00
 author: Sophie Ho
 author-title: Digital Editor
+profile-pic: Sophie-Ho.jpg
 fact-check: mostly-false
 quote: “I’d like to mention one thing. Trump Foundation, small foundation, people contribute, I contribute, the money goes ... one hundred percent goes to different charities including a lot of military.”
 post: true
