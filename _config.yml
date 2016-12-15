@@ -12,7 +12,7 @@ permalink: '/blog/:title'
 markdown: kramdown
 
 # Site settings
-baseurl: ""
+baseurl: "/liveblog"
 url: ""
 
 # Varibles

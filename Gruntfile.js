@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     // Show elapsed time after tasks run
     require('time-grunt')(grunt);
     // Load all Grunt tasks
-    require('jit-grunt')(grunt);
+    require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
         app: {
@@ -312,14 +312,14 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'jekyll:dist',
-        'imagemin',
+        //'imagemin',
         'svgmin',
         'sass:dist',
         // 'uncss',
         'autoprefixer',
-        'cssmin',
-        'uglify:dist',
-        'htmlmin'
+        'cssmin'
+        //'uglify:dist',
+        //'htmlmin'
     ]);
 
     grunt.registerTask('deploy', [
